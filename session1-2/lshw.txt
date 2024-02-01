@@ -1,0 +1,278 @@
+2ac
+    description: Computer
+    product: VirtualBox
+    vendor: innotek GmbH
+    version: 1.2
+    serial: 0
+    width: 32 bits
+    capabilities: smbios-2.5 dmi-2.5 smp-1.4 smp
+    configuration: cpus=4 family=Virtual Machine uuid=99F36C7A-20FF-F74C-A667-AFB955CEC93B
+  *-core
+       description: Motherboard
+       product: VirtualBox
+       vendor: Oracle Corporation
+       physical id: 0
+       version: 1.2
+       serial: 0
+     *-firmware
+          description: BIOS
+          vendor: innotek GmbH
+          physical id: 0
+          version: VirtualBox
+          date: 12/01/2006
+          size: 128KiB
+          capabilities: isa pci cdboot bootselect int9keyboard int10video acpi
+     *-cpu:0
+          product: AMD Ryzen 7 3700X 8-Core Processor
+          vendor: Advanced Micro Devices [AMD]
+          physical id: 1
+          bus info: cpu@0
+          version: 15.1.0
+          size: 3600MHz
+          width: 32 bits
+          capabilities: boot fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt rdtscp constant_tsc rep_good nonstop_tsc extd_apicid tsc_known_freq pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch ssbd vmmcall fsgsbase bmi1 avx2 bmi2 rdseed clflushopt arat
+        *-cache:0
+             description: L1 cache
+             physical id: 0
+             size: 64KiB
+        *-cache:1
+             description: L2 cache
+             physical id: 1
+             size: 512KiB
+     *-cpu:1
+          physical id: 2
+          bus info: cpu@1
+          version: 15.1.0
+          size: 3600MHz
+        *-cache:0
+             description: L1 cache
+             physical id: 0
+             size: 64KiB
+        *-cache:1
+             description: L2 cache
+             physical id: 1
+             size: 512KiB
+     *-cpu:2
+          physical id: 3
+          bus info: cpu@2
+          version: 15.1.0
+          size: 3600MHz
+        *-cache:0
+             description: L1 cache
+             physical id: 0
+             size: 64KiB
+        *-cache:1
+             description: L2 cache
+             physical id: 1
+             size: 512KiB
+     *-cpu:3
+          physical id: 4
+          bus info: cpu@3
+          version: 15.1.0
+          size: 3600MHz
+        *-cache:0
+             description: L1 cache
+             physical id: 0
+             size: 64KiB
+        *-cache:1
+             description: L2 cache
+             physical id: 1
+             size: 512KiB
+     *-memory
+          description: System memory
+          physical id: 5
+          size: 1019MiB
+     *-pci
+          description: Host bridge
+          product: 440FX - 82441FX PMC [Natoma]
+          vendor: Intel Corporation
+          physical id: 100
+          bus info: pci@0000:00:00.0
+          version: 02
+          width: 32 bits
+          clock: 33MHz
+        *-isa
+             description: ISA bridge
+             product: 82371SB PIIX3 ISA [Natoma/Triton II]
+             vendor: Intel Corporation
+             physical id: 1
+             bus info: pci@0000:00:01.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: isa bus_master
+             configuration: latency=0
+        *-ide
+             description: IDE interface
+             product: 82371AB/EB/MB PIIX4 IDE
+             vendor: Intel Corporation
+             physical id: 1.1
+             bus info: pci@0000:00:01.1
+             version: 01
+             width: 32 bits
+             clock: 33MHz
+             capabilities: ide isa_compatibility_mode_controller__supports_both_channels_switched_to_pci_native_mode__supports_bus_mastering bus_master
+             configuration: driver=ata_piix latency=64
+             resources: irq:0 ioport:1f0(size=8) ioport:3f6 ioport:170(size=8) ioport:376 ioport:d000(size=16)
+        *-display
+             description: VGA compatible controller
+             product: SVGA II Adapter
+             vendor: VMware
+             physical id: 2
+             bus info: pci@0000:00:02.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: vga_controller bus_master rom
+             configuration: driver=vmwgfx latency=64
+             resources: irq:18 ioport:d010(size=16) memory:e0000000-e0ffffff memory:f0000000-f01fffff
+        *-network
+             description: Ethernet interface
+             product: 82540EM Gigabit Ethernet Controller
+             vendor: Intel Corporation
+             physical id: 3
+             bus info: pci@0000:00:03.0
+             logical name: enp0s3
+             version: 02
+             serial: 08:00:27:18:f3:3b
+             size: 1Gbit/s
+             capacity: 1Gbit/s
+             width: 32 bits
+             clock: 66MHz
+             capabilities: pm pcix bus_master cap_list ethernet physical tp 10bt 10bt-fd 100bt 100bt-fd 1000bt-fd autonegotiation
+             configuration: autonegotiation=on broadcast=yes driver=e1000 driverversion=7.3.21-k8-NAPI duplex=full ip=10.0.2.15 latency=64 link=yes mingnt=255 multicast=yes port=twisted pair speed=1Gbit/s
+             resources: irq:19 memory:f0200000-f021ffff ioport:d020(size=8)
+        *-generic
+             description: System peripheral
+             product: VirtualBox Guest Service
+             vendor: InnoTek Systemberatung GmbH
+             physical id: 4
+             bus info: pci@0000:00:04.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             configuration: driver=vboxguest latency=0
+             resources: irq:20 ioport:d040(size=32) memory:f0400000-f07fffff memory:f0800000-f0803fff
+        *-multimedia
+             description: Multimedia audio controller
+             product: 82801AA AC'97 Audio Controller
+             vendor: Intel Corporation
+             physical id: 5
+             bus info: pci@0000:00:05.0
+             version: 01
+             width: 32 bits
+             clock: 33MHz
+             capabilities: bus_master
+             configuration: driver=snd_intel8x0 latency=64
+             resources: irq:21 ioport:d100(size=256) ioport:d200(size=64)
+        *-usb
+             description: USB controller
+             product: KeyLargo/Intrepid USB
+             vendor: Apple Inc.
+             physical id: 6
+             bus info: pci@0000:00:06.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: ohci bus_master cap_list
+             configuration: driver=ohci-pci latency=64
+             resources: irq:22 memory:f0804000-f0804fff
+           *-usbhost
+                product: OHCI PCI host controller
+                vendor: Linux 4.4.0-210-generic ohci_hcd
+                physical id: 1
+                bus info: usb@1
+                logical name: usb1
+                version: 4.04
+                capabilities: usb-1.10
+                configuration: driver=hub slots=12 speed=12Mbit/s
+              *-usb
+                   description: Human interface device
+                   product: USB Tablet
+                   vendor: VirtualBox
+                   physical id: 1
+                   bus info: usb@1:1
+                   version: 1.00
+                   capabilities: usb-1.10
+                   configuration: driver=usbhid maxpower=100mA speed=12Mbit/s
+        *-bridge
+             description: Bridge
+             product: 82371AB/EB/MB PIIX4 ACPI
+             vendor: Intel Corporation
+             physical id: 7
+             bus info: pci@0000:00:07.0
+             version: 08
+             width: 32 bits
+             clock: 33MHz
+             capabilities: bridge
+             configuration: driver=piix4_smbus latency=0
+             resources: irq:9
+        *-storage
+             description: SATA controller
+             product: 82801HM/HEM (ICH8M/ICH8M-E) SATA Controller [AHCI mode]
+             vendor: Intel Corporation
+             physical id: d
+             bus info: pci@0000:00:0d.0
+             version: 02
+             width: 32 bits
+             clock: 33MHz
+             capabilities: storage pm ahci_1.0 bus_master cap_list
+             configuration: driver=ahci latency=64
+             resources: irq:21 ioport:d240(size=8) ioport:d248(size=4) ioport:d250(size=8) ioport:d258(size=4) ioport:d260(size=16) memory:f0806000-f0807fff
+     *-scsi:0
+          physical id: 6
+          logical name: scsi1
+          capabilities: emulated
+        *-cdrom
+             description: DVD reader
+             physical id: 0.0.0
+             bus info: scsi@1:0.0.0
+             logical name: /dev/cdrom
+             logical name: /dev/dvd
+             logical name: /dev/sr0
+             capabilities: audio dvd
+             configuration: status=nodisc
+     *-scsi:1
+          physical id: 7
+          logical name: scsi2
+          capabilities: emulated
+        *-disk
+             description: ATA Disk
+             product: VBOX HARDDISK
+             physical id: 0.0.0
+             bus info: scsi@2:0.0.0
+             logical name: /dev/sda
+             version: 1.0
+             serial: VB0ac3ec2b-51eee6c6
+             size: 10GiB (10GB)
+             capabilities: partitioned partitioned:dos
+             configuration: ansiversion=5 logicalsectorsize=512 sectorsize=512 signature=539c0934
+           *-volume:0
+                description: Linux filesystem partition
+                vendor: Linux
+                physical id: 1
+                bus info: scsi@2:0.0.0,1
+                logical name: /dev/sda1
+                logical name: /boot
+                version: 1.0
+                serial: 91686235-0067-420a-af51-8fea0ac4c89f
+                size: 731MiB
+                capacity: 731MiB
+                capabilities: primary bootable extended_attributes large_files ext2 initialized
+                configuration: filesystem=ext2 lastmountpoint=/boot modified=2023-09-14 20:28:38 mount.fstype=ext2 mount.options=rw,relatime mounted=2023-09-14 20:03:14 state=mounted
+           *-volume:1
+                description: Extended partition
+                physical id: 2
+                bus info: scsi@2:0.0.0,2
+                logical name: /dev/sda2
+                size: 9506MiB
+                capacity: 9506MiB
+                capabilities: primary extended partitioned partitioned:extended
+              *-logicalvolume
+                   description: Linux LVM Physical Volume partition
+                   physical id: 5
+                   logical name: /dev/sda5
+                   serial: Ca10sV-yxSD-tvb3-HuV2-IhJG-bdEE-l7xZnY
+                   size: 9506MiB
+                   capacity: 9506MiB
+                   capabilities: multi lvm2

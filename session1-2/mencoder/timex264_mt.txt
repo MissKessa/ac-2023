@@ -1,0 +1,74 @@
+MEncoder 1.2.1 (Debian), built with gcc-5.4.0 (C) 2000-2016 MPlayer Team
+
+WARNING: OUTPUT FILE FORMAT IS _AVI_. See -of help.
+success: format: 0  data: 0x0 - 0x180864
+libavformat version 56.40.101 (external)
+libavformat file format detected.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0xb7008c20]Protocol name not provided, cannot determine if input is local or a network protocol, buffers and access                             patterns cannot be configured optimally without knowing the protocol
+[lavf] stream 0: video (h264), -vid 0
+[lavf] stream 1: audio (aac), -aid 0, -alang und
+VIDEO:  [H264]  500x280  24bpp  29.970 fps  493.3 kbps (60.2 kbyte/s)
+[V] filefmt:44  fourcc:0x34363248  size:500x280  fps:29.970  ftime:=0.0334
+==========================================================================
+Opening audio decoder: [ffmpeg] FFmpeg/libavcodec audio decoders
+libavcodec version 56.60.100 (external)
+AUDIO: 44100 Hz, 2 ch, floatle, 128.8 kbit/4.56% (ratio: 16095->352800)
+Selected audio codec: [ffaac] afm: ffmpeg (FFmpeg AAC (MPEG-2/MPEG-4 Audio))
+==========================================================================
+Opening video filter: [expand osd=1]
+Expand: -1 x -1, -1 ; -1, osd: 1, aspect: 0.000000, round: 1
+Opening video filter: [scale w=640 h=480]
+==========================================================================
+Opening video decoder: [ffmpeg] FFmpeg's libavcodec codec family
+Selected video codec: [ffh264] vfm: ffmpeg (FFmpeg H.264)
+==========================================================================
+[mp2 @ 0xb6594800]Channel layout not specified
+Movie-Aspect is undefined - no prescaling applied.
+[swscaler @ 0xb7122f80]bicubic scaler, from yuv420p to yuv420p using MMXEXT
+x264 [info]: using SAR=857/640
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX LZCNT BMI2
+x264 [info]: profile High, level 3.0
+Pos:   1.6s     49f ( 8%)  0.00fps Trem:   0min   0mb  A-V:0.032 [0:223]
+Writing header...
+ODML: vprp aspect is 16384:9176.
+Setting audio delay to 0.078s.
+Writing header...
+ODML: vprp aspect is 16384:9176.
+Setting audio delay to 0.078s.
+Pos:  20.0s    600f (100%) 289.58fps Trem:   0min   1mb  A-V:0.019 [485:223]
+
+Skipping frame!
+Pos:  20.0s    601f (100%) 290.06fps Trem:   0min   1mb  A-V:0.018 [485:223]
+
+Flushing video frames.
+Writing index...
+Writing header...
+ODML: vprp aspect is 16384:9176.
+Setting audio delay to 0.078s.
+
+Video stream:  512.265 kbit/s  (64033 B/s)  size: 1281943 bytes  20.020 secs  601 frames
+
+Audio stream:  224.000 kbit/s  (27999 B/s)  size: 560274 bytes  20.010 secs
+x264 [info]: frame I:3     Avg QP:20.68  size: 11436
+x264 [info]: frame P:253   Avg QP:22.89  size:  4116
+x264 [info]: frame B:344   Avg QP:27.62  size:   599
+x264 [info]: consecutive B-frames: 17.5% 14.3% 11.5% 56.7%
+x264 [info]: mb I  I16..4: 14.3% 72.9% 12.8%
+x264 [info]: mb P  I16..4:  4.1%  6.3%  0.5%  P16..4: 30.2% 10.8%  4.6%  0.0%  0.0%    skip:43.5%
+x264 [info]: mb B  I16..4:  0.1%  0.1%  0.0%  B16..8: 25.6%  1.8%  0.2%  direct: 0.4%  skip:71.9%  L0:42.6% L1:52.3% BI: 5.0%
+x264 [info]: 8x8 transform intra:58.9% inter:72.1%
+x264 [info]: coded y,uvDC,uvAC intra: 27.8% 24.1% 4.2% inter: 9.3% 5.3% 0.0%
+x264 [info]: i16 v,h,dc,p: 36% 36%  8% 20%
+x264 [info]: i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 27% 19% 37%  2%  3%  4%  3%  3%  2%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 38% 20% 21%  2%  4%  6%  3%  3%  2%
+x264 [info]: i8c dc,h,v,p: 69% 13% 17%  2%
+x264 [info]: Weighted P-Frames: Y:18.2% UV:5.9%
+x264 [info]: ref P L0: 64.9% 17.1% 13.5%  4.3%  0.2%
+x264 [info]: ref B L0: 89.8%  9.2%  1.0%
+x264 [info]: ref B L1: 96.3%  3.7%
+x264 [info]: kb/s:512.26
+
+real    0m2.233s
+user    0m6.908s
+sys     0m0.196s
+

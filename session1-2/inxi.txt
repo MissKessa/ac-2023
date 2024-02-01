@@ -1,0 +1,2 @@
+[1;34mCPU[0;37m~Quad core AMD Ryzen 7 3700X 8-Core (-MCP-) [1;34mspeed[0;37m~3593 MHz (max) [1;34mKernel[0;37m~4.4.0-210-generic i686 [1;34mUp[0;37m~26 min [1;34mMem[0;37m~85.6/999.6MB [1;34mHDD[0;37m~10.7GB(30.6% used) [1;34mProcs[0;37m~123 [1;34mClient[0;37m~Shell [1;34minxi[0;37m~2.2.35 [0;37m [0;37m
+[0m

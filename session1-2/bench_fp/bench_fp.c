@@ -17,26 +17,20 @@ int main(int argc, char* argv[])
 	fflush(stdout);
 
 	// TODO: if (...)
-	#error *** Complete ***
-	{
-		perror("clock_gettime");
-		exit(EXIT_FAILURE);
-	}
+	clock_gettime(CLOCK_REALTIME, &tStart);
 
 	Task();
 
 	// Finish measuring time
 	// TODO: if (...)
-	#error *** Complete ***
-	{
-		perror("clock_gettime");
-		exit(EXIT_FAILURE);
-	}
+	clock_gettime(CLOCK_REALTIME, &tEnd);
 
 	printf("Finished\n");
 
 	// Show the elapsed time
-	#error *** Complete ***
+
+	dElapsedTimeS = (tEnd.tv_sec - tStart.tv_sec);
+	dElapsedTimeS += (tEnd.tv_nsec - tStart.tv_nsec) / 1e+9;
 	printf("Elapsed time    : %f s.\n", dElapsedTimeS);
 
 	return 0;
